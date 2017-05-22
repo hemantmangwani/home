@@ -11,40 +11,39 @@
                 {
                     if (n%i==0)
                     {
-                        
+
                         if (n/i == i)
                            c++;
-             
+
                         else
                             c=c+2;
                     }
-                    //cout<<"c="<<c;
                 }
                 if(c>1 && c%2!=0)
                 {
-                	//cout<<"ecc"<<c<<endl;
+
                 int x=primeno(c);
                 if(x==0) m++;
                 }
-                    
+
             }
-             
+
             int primeno(int n)
             {
-             
+
                 if (n <= 1)  return 1;
                 if (n <= 3)  return 0;
-             
-                
+
+
                 if (n%2 == 0 || n%3 == 0) return 1;
-             
+
                 for (int i=5; i*i<=n; i=i+6)
                     if (n%i == 0 || n%(i+2) == 0)
                        return 1;
-             
+
                 return 0;
             }
-             
+
             int main()
             {
             	freopen("i1.txt","rt",stdin);
@@ -54,7 +53,8 @@
             	while(t--)
             	{
             	m=0;
-                
+//dhfjjknjknjnjjn
+//kbvhbbcvjngvj
                 long long n,i;
                 cin>>n;
                 for(i=0;i<n;i++)
@@ -72,5 +72,4 @@
                 cout<<m<<endl;
                }
                 return 0;
-            }    
-
+            }
